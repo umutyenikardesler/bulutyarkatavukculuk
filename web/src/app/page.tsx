@@ -4,23 +4,29 @@ import CTAButtons from "@/components/CTAButtons";
 export default function Home() {
   return (
     <div>
-      <section className="bg-gradient-to-b from-black/5 to-transparent dark:from-white/5">
+      <section id="banner" className="bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/images/index/banner.jpg')" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-6 md:grid-cols-2 items-center">
           <div className="space-y-4">
-            <div className="text-sm uppercase tracking-wider opacity-60">İşimizin Uzmanıyız</div>
+            <div className="text-xl uppercase tracking-wider opacity-80">İşimizin Uzmanıyız</div>
             <h1 className="text-3xl sm:text-4xl font-semibold leading-tight">
               Kaliteli & Sağlıklı Tavuklarımız ile Tanışın
             </h1>
-            <p className="opacity-80">
+            <p
+              className="font-extrabold opacity-100 text-black"
+              style={{
+                textShadow:
+                  "2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1.5px 1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, -1.5px -1.5px 0 #fff",
+              }}
+            >
               Yarka, gezen tavuk, Lohman Brown ve diğer cinslerde uzman tedarikçi.
               Teslimat ağımızla hızlı ve güvenilir hizmet sunuyoruz.
             </p>
             <div className="flex gap-3">
-              <Link href="/kumes-hayvanlari" className="rounded-md bg-blue-600 text-white px-4 py-2 text-sm hover:bg-blue-700">Kümes Hayvanları</Link>
-              <Link href="/hakkimizda" className="rounded-md border border-black/15 dark:border-white/15 px-4 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5">Hakkımızda</Link>
+              <Link href="/kumes-hayvanlari" className="rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-700">Kümes Hayvanları</Link>
+              <Link href="/hakkimizda" className="rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-700">Hakkımızda</Link>
             </div>
           </div>
-          <div className="aspect-video rounded-lg bg-black/10 dark:bg-white/10" />
+          {/* <div className="aspect-video rounded-lg bg-black/10 dark:bg-white/10" /> */}
         </div>
       </section>
 

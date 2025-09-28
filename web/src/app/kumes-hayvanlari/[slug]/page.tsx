@@ -2,21 +2,23 @@ import { notFound } from "next/navigation";
 import CTAButtons from "@/components/CTAButtons";
 import { getVarietyBySlug, varieties } from "@/data/varieties";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return varieties.map((v) => ({ slug: v.slug }));
 }
 
-export function generateMetadata({ params }: Props) {
-  const v = getVarietyBySlug(params.slug);
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const v = getVarietyBySlug(slug);
   return {
     title: v ? v.name : "Ürün",
   };
 }
 
-export default function VarietyDetailPage({ params }: Props) {
-  const variety = getVarietyBySlug(params.slug);
+export default async function VarietyDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const variety = getVarietyBySlug(slug);
   if (!variety) return notFound();
 
   return (

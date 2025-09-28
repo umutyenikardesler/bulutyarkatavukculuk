@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "+905303083702";
+const WHATSAPP_NUMBER = "+905543125164";
 
 export default function WhatsappFloating() {
   const href = `https://wa.me/${WHATSAPP_NUMBER.replace("+", "")}`;

@@ -11,12 +11,11 @@ export default function IletisimPage() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="space-y-2 text-sm">
           <div className="font-medium">Adres</div>
-          <div>Çeltikçi Mah. 5715 Sk. No: 5/2 İnegöl / BURSA</div>
+          <div>Ali Ulvi Kurucu, 17095. Sk., 42000 Meram/Konya</div>
           <div className="font-medium mt-4">E-posta</div>
-          <a href="mailto:info@inegolyarkatavuk.com" className="text-blue-600 hover:underline">info@inegolyarkatavuk.com</a>
+          <a href="mailto:info@bulutyarkatavukculuk.com" className="text-blue-600 hover:underline">info@bulutyarkatavukculuk.com</a>
           <div className="font-medium mt-4">Telefon</div>
-          <a href="tel:+905303083702" className="block">0530 308 37 02</a>
-          <a href="tel:+905364871789" className="block">0536 487 17 89</a>
+          <a href="tel:+905543125164" className="block">0554 312 51 64</a>
         </div>
         <div id="teklif" className="rounded-lg border border-black/10 dark:border-white/10 p-4">
           <div className="font-medium mb-2">Teklif Formu</div>

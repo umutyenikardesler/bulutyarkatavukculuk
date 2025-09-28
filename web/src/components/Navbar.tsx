@@ -14,11 +14,11 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-black/10 dark:border-white/10">
+    <header className="sticky top-0 z-50 bg-amber-900/100 backdrop-blur border-b border-black/10 dark:border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="font-semibold tracking-tight text-lg">
-            İnegöl Yarka Tavuk
+          <Link href="/" className="font-semibold tracking-tight text-lg text-white">
+            Bulut Yarka Tavukculuk
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -26,7 +26,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm hover:opacity-80 transition-opacity"
+                className="text-sm font-semibold text-white inline-block rounded px-2 py-1 hover:bg-amber-400/80 transition-colors"
               >
                 {item.label}
               </Link>
@@ -36,7 +36,7 @@ export function Navbar() {
           <button
             aria-label="Menüyü aç/kapat"
             onClick={() => setOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-black/10 dark:border-white/10"
+            className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-white/30 text-white"
           >
             <span className="i-lucide-menu size-5">≡</span>
           </button>
@@ -44,14 +44,14 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-black/10 dark:border-white/10">
+        <div className="md:hidden border-t border-white/30 bg-amber-400/80 backdrop-blur">
           <div className="px-4 py-3 flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="py-1"
+                className="text-white font-semibold inline-block rounded px-2 py-1 hover:bg-amber-400/80 transition-colors"
               >
                 {item.label}
               </Link>

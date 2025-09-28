@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "İnegöl Yarka Tavuk",
-    template: "%s | İnegöl Yarka Tavuk",
+    default: "Bulut Yarka Tavukculuk",
+    template: "%s | Bulut Yarka Tavukculuk",
   },
   description:
     "Kaliteli ve sağlıklı yarka, gezen tavuk ve diğer cinslerde uzman tedarikçi.",
-  metadataBase: new URL("https://www.inegolyarkatavuk.com"),
+  metadataBase: new URL("https://www.bulutyarkatavukculuk.com"),
   alternates: { canonical: "/" },
   icons: { icon: "/favicon.ico" },
 };
