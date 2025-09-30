@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Kaliteli ve sağlıklı yarka, gezen tavuk ve diğer cinslerde uzman tedarikçi.",
   metadataBase: new URL("https://www.bulutyarkatavukculuk.com"),
   alternates: { canonical: "/" },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/images/favicon/favicon.ico" },
 };
 
 export default function RootLayout({

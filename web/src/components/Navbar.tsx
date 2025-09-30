@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navItems: Array<{ href: string; label: string }> = [
@@ -17,8 +18,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-amber-900/100 backdrop-blur border-b border-black/10 dark:border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="font-semibold tracking-tight text-lg text-white">
-            Bulut Yarka Tavukculuk
+          <Link href="/" className="flex items-center gap-3 font-semibold tracking-tight text-lg text-white">
+            <Image src="/images/chicken.png" alt="Bulut Yarka Tavukculuk" width={40} height={40} className="h-10 w-10 rounded" />
+            <span>Bulut Yarka Tavukculuk</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

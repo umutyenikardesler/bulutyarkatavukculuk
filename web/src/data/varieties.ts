@@ -55,6 +55,27 @@ export const varieties: Variety[] = [
     description:
       "Dengeli verim ve güçlü bağışıklık özellikleriyle tercih edilir.",
   },
+  {
+    slug: "suseks-yarka",
+    name: "Suseks Yarka",
+    category: "Yarka",
+    description:
+      "Dayanıklı yapısı ve dengeli yumurta verimiyle bilinen bir çeşittir.",
+  },
+  {
+    slug: "blue-australorp-yarka",
+    name: "Blue Australorp Yarka",
+    category: "Yarka",
+    description:
+      "Sakin mizacı ve istikrarlı üretimiyle öne çıkan mavi tonlu bir cins.",
+  },
+  {
+    slug: "lohman-sandy-yarka",
+    name: "Lohman Sandy Yarka",
+    category: "Yarka",
+    description:
+      "Lohman ailesinin verimli üyelerinden, dengeli performans sunar.",
+  },
 ];
 
 export function getVarietyBySlug(slug: string) {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CTAButtons from "@/components/CTAButtons";
 
 export default function Home() {
@@ -31,13 +32,54 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-xl font-semibold mb-6">Son Eklenen Kümes Hayvanları</h2>
+        <h2 className="text-xl font-bold text-amber-800 mb-6">Son Eklenen Kümes Hayvanları</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["Lohman Brown Yarka", "Tinted Coral Yarka", "Ataks Yarka"].map((name) => (
+          {["Lohman Brown Yarka", "Lohman Sandy", "Ataks Yarka"].map((name) => (
             <div key={name} className="rounded-lg border border-black/10 dark:border-white/10 p-5 flex flex-col gap-3">
-              <h3 className="text-lg font-medium">{name}</h3>
-              <p className="text-sm opacity-80">Sipariş için bizimle iletişime geçiniz.</p>
-              <CTAButtons whatsappMessage={`${name} hakkında bilgi ve fiyat teklifi almak istiyorum.`} />
+              <h3 className="text-lg font-medium text-amber-800 text-center">{name}</h3>
+              {name === "Lohman Brown Yarka" && (
+                <div className="w-full h-48 flex items-center justify-center">
+                  <Image
+                    src="/images/index/Lohman-Brown.png"
+                    alt="Lohman Brown Yarka"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              )}
+              {name === "Lohman Sandy" && (
+                <div className="w-full h-48 flex items-center justify-center">
+                  <Image
+                    src="/images/index/Lohman-Sandy.png"
+                    alt="Lohman Sandy"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              )}
+              {name === "Ataks Yarka" && (
+                <div className="w-full h-48 flex items-center justify-center">
+                  <Image
+                    src="/images/index/Ataks-Yarka.png"
+                    alt="Ataks Yarka"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              )}
+              <a
+                href={`https://wa.me/905464755164?text=${encodeURIComponent(
+                  `${name} hakkında bilgi ve fiyat teklifi almak istiyorum.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
+              >
+                Whatsapp ile İletişime Geç & Teklif Al
+              </a>
             </div>
           ))}
         </div>
@@ -52,11 +94,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-xl font-semibold mb-2">B2B Platformumuz ile İşinizi Kolaylaştırın</h2>
-        <p className="opacity-80 mb-4">Kolay sipariş, toptan fiyat avantajları ve özel müşteri desteği.</p>
-        <CTAButtons />
-      </section>
+      
     </div>
   );
 }

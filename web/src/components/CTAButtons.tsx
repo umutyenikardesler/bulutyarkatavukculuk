@@ -4,7 +4,7 @@ type CTAButtonsProps = {
   whatsappMessage?: string;
 };
 
-const WHATSAPP_NUMBER = "+905543125164";
+const WHATSAPP_NUMBER = "+905464755164";
 
 export default function CTAButtons({ whatsappMessage }: CTAButtonsProps) {
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace("+", "")}?text=${encodeURIComponent(
@@ -23,7 +23,7 @@ export default function CTAButtons({ whatsappMessage }: CTAButtonsProps) {
       </a>
       <Link
         href="/iletisim#teklif"
-        className="inline-flex items-center justify-center rounded-md border border-black/15 dark:border-white/15 px-4 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+        className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
       >
         Teklif al
       </Link>
