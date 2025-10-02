@@ -83,7 +83,7 @@ export default function KumesHayvanlariPage() {
                     Detayları Gör
                   </Link>
                   <a
-                    href={`https://wa.me/905464755164?text=${encodeURIComponent(`${v.name} hakkında bilgi ve fiyat teklifi almak istiyorum.`)}`}
+                    href={`https://wa.me/905515053607?text=${encodeURIComponent(`${v.name} hakkında bilgi ve fiyat teklifi almak istiyorum.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
@@ -96,6 +96,30 @@ export default function KumesHayvanlariPage() {
           })}
         </div>
       </div>
+
+      {/* KÜMES KURULUMU CTA */}
+      <section className="mt-6">
+        <div className="rounded-lg border border-black/10 dark:border-white/10 p-5">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="flex-shrink-0">
+                <Image src="/images/kümes.png" alt="Kümes Kurulumu" width={56} height={56} className="h-14 w-14 object-contain" />
+              </div>
+              <div className="space-y-1">
+                <h2 className="text-xl font-bold text-amber-800">🪄 KÜMES KURULUMU</h2>
+                <p className="opacity-80">Kümes Kurulumu yapmak için <a href="/kumes-kurulumu" className="text-amber-800 font-semibold underline">tıklayınız</a>.</p>
+              </div>
+            </div>
+            <a
+              href="tel:+905515053607"
+              className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
+            >
+              İletişime Geç
+            </a>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

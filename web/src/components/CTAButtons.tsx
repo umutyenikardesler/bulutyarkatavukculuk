@@ -4,7 +4,7 @@ type CTAButtonsProps = {
   whatsappMessage?: string;
 };
 
-const WHATSAPP_NUMBER = "+905464755164";
+const WHATSAPP_NUMBER = "+905515053607";
 
 export default function CTAButtons({ whatsappMessage }: CTAButtonsProps) {
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace("+", "")}?text=${encodeURIComponent(

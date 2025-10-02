@@ -33,10 +33,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="tr" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
         <WhatsappFloating />
       </body>

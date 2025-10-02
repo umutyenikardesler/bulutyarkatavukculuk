@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import CTAButtons from "@/components/CTAButtons";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -32,68 +31,62 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-xl font-bold text-amber-800 mb-6">Son Eklenen Kümes Hayvanları</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["Lohman Brown Yarka", "Lohman Sandy", "Ataks Yarka"].map((name) => (
-            <div key={name} className="rounded-lg border border-black/10 dark:border-white/10 p-5 flex flex-col gap-3">
-              <h3 className="text-lg font-medium text-amber-800 text-center">{name}</h3>
-              {name === "Lohman Brown Yarka" && (
-                <div className="w-full h-48 flex items-center justify-center">
-                  <Image
-                    src="/images/index/Lohman-Brown.png"
-                    alt="Lohman Brown Yarka"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              )}
-              {name === "Lohman Sandy" && (
-                <div className="w-full h-48 flex items-center justify-center">
-                  <Image
-                    src="/images/index/Lohman-Sandy.png"
-                    alt="Lohman Sandy"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              )}
-              {name === "Ataks Yarka" && (
-                <div className="w-full h-48 flex items-center justify-center">
-                  <Image
-                    src="/images/index/Ataks-Yarka.png"
-                    alt="Ataks Yarka"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              )}
-              <a
-                href={`https://wa.me/905464755164?text=${encodeURIComponent(
-                  `${name} hakkında bilgi ve fiyat teklifi almak istiyorum.`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
-              >
-                Whatsapp ile İletişime Geç & Teklif Al
-              </a>
+        <h2 className="text-xl font-bold text-amber-800 mb-6">💥 ÜRÜNLERİMİZ</h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          <div className="rounded-lg border border-black/10 dark:border-white/10 p-5">
+            <ul className="space-y-1">
+              <li><strong>🐔 ATAKS TAVUK</strong></li>
+              <li><strong>🐔 BLACK NİCK TAVUK</strong></li>
+              <li><strong>🐔 LOHMAN BROWN  TAVUK</strong></li>
+              <li><strong>🐔 LOHMAN SENDY TAVUK</strong></li>
+              <li><strong>🐔 TİNTED CORAL TAVUK</strong></li>
+              <li><strong>🐔 SASSO HEM ETLIK HEM YUMURTALIK</strong></li>
+              <li><strong>🐔 SUSEKS TAVUK</strong></li>
+              <li><strong>🐔 ASTROLOP TAVUK</strong></li>
+              <li><strong>🦃 A.BRONZ HİNDİ</strong></li>
+            </ul>
+          </div>
+
+          <div className="rounded-lg border border-black/10 dark:border-white/10 p-5">
+            <div className="space-y-2">
+              <div>⛺ HER TÜRLÜ ANAHTAR TESLİM KÜMES KURULUMU</div>
+              <div>✅ 50 ADET VE ÜZERİ ALIMLARDA KAPI TESLIM</div>
+              <div><strong>Ücretsiz nakliye ile kapınıza kadar gelsin.</strong></div>
+              <div>💉 AŞILARI YAPILI</div>
+              <div>💥 Kapora yok.</div>
+              <div>🚛 Kapıda ödeme kolaylığı.</div>
+              <div>👍 Her türlü Veterinerlik ve Danışmanlık hizmetleri</div>
+              <div className="text-sm"><strong>Not:</strong> Yerin uzaklığına göre teslimat adet sayımız değişmektedir. </div>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-xl font-semibold mb-4">Teslimat Bölgelerimiz</h2>
-        <div className="flex flex-wrap gap-2 text-sm">
-          {["Bursa","Balıkesir","Manisa","İzmir","Yalova","İstanbul","Kırklareli","Eskişehir","Bilecik","Kütahya","Ankara"].map((city) => (
-            <span key={city} className="rounded-full border border-black/15 dark:border-white/15 px-3 py-1">{city}</span>
-          ))}
-        </div>
-      </section>
+      {/* İLKELERİMİZ */}
+     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+       <h2 className="text-xl font-bold text-amber-800 mb-6">👉 İLKELERİMİZ</h2>
+       {/* <p className="opacity-80 mb-6">Sizlere Neler Sunuyoruz?</p> */}
+       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+         <div className="group rounded-lg border border-black/10 dark:border-white/10 p-5 space-y-2 transition-colors hover:bg-amber-800 hover:text-white">
+           <div className="text-amber-800 group-hover:text-white font-semibold">Tecrübeli Uzman Ekip</div>
+           <p className="text-sm opacity-80">Alanında deneyimli ekibimizle, şartlarınıza ve hedeflerinize uygun cinsleri öneriyoruz.</p>
+         </div>
+         <div className="group rounded-lg border border-black/10 dark:border-white/10 p-5 space-y-2 transition-colors hover:bg-amber-800 hover:text-white">
+           <div className="text-amber-800 group-hover:text-white font-semibold">Satış Öncesi Danışmanlık</div>
+           <p className="text-sm opacity-80">Bütçe, iklim ve pazarınıza göre en verimli cinsi birlikte belirleyip yönlendiriyoruz.</p>
+         </div>
+         <div className="group rounded-lg border border-black/10 dark:border-white/10 p-5 space-y-2 transition-colors hover:bg-amber-800 hover:text-white">
+           <div className="text-amber-800 group-hover:text-white font-semibold">Satış Sonrası Destek</div>
+           <p className="text-sm opacity-80">Besleme, aşı ve bakım süreçlerinde sürekli bilgilendirme ve destek sağlıyoruz.</p>
+         </div>
+         <div className="group rounded-lg border border-black/10 dark:border-white/10 p-5 space-y-2 transition-colors hover:bg-amber-800 hover:text-white">
+           <div className="text-amber-800 group-hover:text-white font-semibold">Güvenilir & Kaliteli Hizmet</div>
+           <p className="text-sm opacity-80">Aşılı ve seçkin hayvanları, uygun araçlarla adresinize güvenle teslim ediyoruz.</p>
+         </div>
+       </div>
+     </section>
 
+     <Testimonials />
       
     </div>
   );

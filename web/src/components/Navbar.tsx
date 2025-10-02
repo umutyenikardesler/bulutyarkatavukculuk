@@ -23,16 +23,22 @@ export function Navbar() {
             <span>Bulut Yarka Tavukculuk</span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-semibold text-white inline-block rounded px-2 py-1 hover:bg-amber-400/80 transition-colors"
+                className="text-sm font-semibold text-white inline-block rounded px-1 py-1 hover:bg-amber-400/80 transition-colors"
               >
                 {item.label}
               </Link>
             ))}
+            <div className="hidden md:flex items-center gap-3 pl-4 text-white">
+              <a href="https://www.facebook.com/Kafkastavuk" aria-label="Facebook" className="hover:opacity-80" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f fa-lg" /></a>
+              <a href="https://www.instagram.com/bulut_tavukculuk/" aria-label="Instagram" className="hover:opacity-80" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-lg" /></a>
+              <a href="https://www.youtube.com/@BULUTYARKATAVUKCULUK" aria-label="YouTube" className="hover:opacity-80" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube fa-lg" /></a>
+              <a href="https://www.tiktok.com/@bulutyarkatavukculuk" aria-label="TikTok" className="hover:opacity-80" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok fa-lg" /></a>
+            </div>
           </nav>
 
           <button

@@ -26,20 +26,37 @@ export default function Footer() {
         <div>
           <div className="font-semibold mb-2">İletişim</div>
           <ul className="space-y-1 text-sm">
-            <li><span className="text-amber-800 font-semibold">Adres:</span> Ali Ulvi Kurucu, 17095. Sk., 42000 Meram / KONYA</li>
-            <li><span className="text-amber-800 font-semibold">E-posta:</span> <a href="mailto:info@bulutyarkatavukculuk.com">info@bulutyarkatavukculuk.com</a></li>
-            <li><span className="text-amber-800 font-semibold">Tel:</span> <a href="tel:+905464755164">+90 546 475 51 64</a></li>
+            <li>
+              <span className="text-amber-800 font-semibold">Adres:</span> Meram / KONYA — Tarsus / MERSİN
+              </li>
+            <li>
+              <span className="text-amber-800 font-semibold">E-posta:</span> 
+              <a href="mailto:bulutyarkatavukculuk@gmail.com"> bulutyarkatavukculuk@gmail.com</a>
+              </li> 
+            <li>
+              <span className="text-amber-800 font-semibold">E-posta:</span> 
+              <a href="mailto:info@bulutyarkatavukculuk.com"> info@bulutyarkatavukculuk.com</a>
+              </li>
+            <li>
+              <div className="flex items-center gap-4 flex-wrap">
+                <span><span className="text-amber-800 font-semibold">Telefon:</span> 
+                <a href="tel:05543125164"> 0554 312 51 64</a></span>
+                <span><span className="text-amber-800 font-semibold">WhatsApp:</span> 
+                <a href="tel:05515053607"> 0551 505 36 07</a></span>
+              </div>
+            </li>
           </ul>
         </div>
         
       </div>
       <div className="bg-amber-900 text-white py-3">
         <div className="flex justify-center items-center text-center">
-        <div className="text-lg font-semibold">
-          © {new Date().getFullYear()} Tüm hakları saklıdır.
-        </div>
+          <div className="lg:text-lg sm:text-sm font-semibold">
+            Bulut Yarka Tavukculuk <span suppressHydrationWarning>© {new Date().getUTCFullYear()}</span>
+            <span className="hidden sm:inline"> Tüm hakları saklıdır.</span>
           </div>
         </div>
+      </div>
       
     </footer>
   );
