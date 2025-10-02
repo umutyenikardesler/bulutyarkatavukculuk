@@ -103,7 +103,7 @@ export default function KumesHayvanlariPage() {
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0">
-                <Image src="/images/kümes.png" alt="Kümes Kurulumu" width={56} height={56} className="h-14 w-14 object-contain" />
+                <Image src="/images/kumes.png" alt="Kümes Kurulumu" width={56} height={56} className="h-14 w-14 object-contain" />
               </div>
               <div className="space-y-1">
                 <h2 className="text-xl font-bold text-amber-800">🪄 KÜMES KURULUMU</h2>
@@ -111,7 +111,7 @@ export default function KumesHayvanlariPage() {
               </div>
             </div>
             <a
-              href="tel:+905515053607"
+              href="tel:+905543125164"
               className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
             >
               İletişime Geç

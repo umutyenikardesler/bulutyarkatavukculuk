@@ -10,7 +10,7 @@ export default function KumesKurulumuPage() {
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-lg overflow-hidden border border-black/10 dark:border-white/10">
           <Image
-            src="/images/ku%CC%88mes1.jpeg"
+            src="/images/kumes1.jpeg"
             alt="Kümes 1"
             width={800}
             height={600}
@@ -19,7 +19,7 @@ export default function KumesKurulumuPage() {
         </div>
         <div className="rounded-lg overflow-hidden border border-black/10 dark:border-white/10">
           <Image
-            src="/images/ku%CC%88mes2.jpeg"
+            src="/images/kumes2.jpeg"
             alt="Kümes 2"
             width={800}
             height={600}
