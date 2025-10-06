@@ -87,7 +87,7 @@ export default function GalleryGrid() {
             <button
               aria-label="Önceki"
               disabled={currentIndex !== null ? currentIndex <= startIndex : true}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-20 h-16 w-16 rounded-full bg-black/80 text-white shadow-xl ring-1 ring-white/30 hover:bg-black/90 disabled:opacity-50 flex items-center justify-center text-3xl"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 md:-translate-x-20 h-12 w-12 md:h-16 md:w-16 rounded-full bg-black/80 text-white shadow-xl ring-1 ring-white/30 hover:bg-black/90 disabled:opacity-50 flex items-center justify-center text-2xl md:text-3xl"
               onClick={() =>
                 setCurrentIndex((prev) => {
                   if (prev === null) return prev;
@@ -101,7 +101,7 @@ export default function GalleryGrid() {
             <button
               aria-label="Sonraki"
               disabled={currentIndex !== null ? currentIndex >= pageLastIndex : true}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-20 h-16 w-16 rounded-full bg-black/80 text-white shadow-xl ring-1 ring-white/30 hover:bg-black/90 disabled:opacity-50 flex items-center justify-center text-3xl"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 md:translate-x-20 h-12 w-12 md:h-16 md:w-16 rounded-full bg-black/80 text-white shadow-xl ring-1 ring-white/30 hover:bg-black/90 disabled:opacity-50 flex items-center justify-center text-2xl md:text-3xl"
               onClick={() =>
                 setCurrentIndex((prev) => {
                   if (prev === null) return prev;
@@ -112,13 +112,13 @@ export default function GalleryGrid() {
               ›
             </button>
 
-            <div className="w-[800px] h-[600px] max-w-full max-h-[80vh]">
+            <div className="w-[80vw] h-auto max-h-[70vh] md:w-[800px] md:h-[600px] md:max-h-[70vh]">
               <Image
                 src={images[currentIndex]}
                 alt="Tam boy resim"
                 width={800}
                 height={600}
-                className="w-[800px] h-[600px] max-w-full max-h-[80vh] object-contain rounded"
+                className="w-[80vw] h-auto max-h-[70vh] md:w-[800px] md:h-[600px] md:max-h-[70vh] object-contain rounded"
               />
             </div>
           </div>
