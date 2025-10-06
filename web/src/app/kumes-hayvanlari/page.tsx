@@ -27,14 +27,17 @@ export default function KumesHayvanlariPage() {
             "suseks-yarka",
             "blue-australorp-yarka",
             "lohman-sandy-yarka",
+            "black-nick-yarka",
+            "sasso-yarka",
             "a-bronz-hindi",
           ].map((slug) => {
-            const v = varieties.find((i) => i.slug === slug)!;
+            const v = varieties.find((i) => i.slug === slug);
+            if (!v) return null;
             return (
               <div key={slug} className="rounded-lg border border-black/10 dark:border-white/10 p-5 flex flex-col gap-3">
                 <div className="text-sm uppercase opacity-60">{v.category}</div>
                 <Link href={`/kumes-hayvanlari/${v.slug}`}>
-                  <h3 className="text-lg font-medium text-amber-800 hover:underline cursor-pointer">{v.name}</h3>
+                  <h3 className="text-lg font-medium text-cyan-700 hover:underline cursor-pointer">{v.name}</h3>
                 </Link>
                 {/* Yalnızca görseli olan çeşitlerde görsel göster */}
                 {(v.slug === "lohman-brown-yarka" ||
@@ -44,7 +47,9 @@ export default function KumesHayvanlariPage() {
                   v.slug === "ligorin-yarka" ||
                   v.slug === "a-bronz-hindi" ||
                   v.slug === "suseks-yarka" ||
-                  v.slug === "blue-australorp-yarka") && (
+                  v.slug === "blue-australorp-yarka" ||
+                  v.slug === "black-nick-yarka" ||
+                  v.slug === "sasso-yarka") && (
                   <Link href={`/kumes-hayvanlari/${v.slug}`} className="block">
                     <div className="w-full h-48 flex items-center justify-center">
                       {v.slug === "lohman-brown-yarka" && (
@@ -71,6 +76,12 @@ export default function KumesHayvanlariPage() {
                       {v.slug === "blue-australorp-yarka" && (
                         <Image src="/images/index/Blue-Australorp-Yarka.png" alt={v.name} width={400} height={300} className="w-full h-full object-contain" />
                       )}
+                      {v.slug === "black-nick-yarka" && (
+                        <Image src="/images/black-nick.png" alt={v.name} width={400} height={300} className="w-full h-full object-contain" />
+                      )}
+                      {v.slug === "sasso-yarka" && (
+                        <Image src="/images/sasso.png" alt={v.name} width={400} height={300} className="w-full h-full object-contain" />
+                      )}
                     </div>
                   </Link>
                 )}
@@ -78,17 +89,17 @@ export default function KumesHayvanlariPage() {
                 <div className="flex items-center justify-between">
                   <Link
                     href={`/kumes-hayvanlari/${v.slug}`}
-                    className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
+                    className="inline-flex items-center justify-center rounded-md bg-cyan-700 text-white px-4 py-2 text-sm hover:bg-cyan-600"
                   >
-                    Detayları Gör
+                    Ürün Bilgisi
                   </Link>
                   <a
                     href={`https://wa.me/905515053607?text=${encodeURIComponent(`${v.name} hakkında bilgi ve fiyat teklifi almak istiyorum.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
+                    className="inline-flex items-center justify-center rounded-md bg-cyan-700 text-white px-4 py-2 text-sm hover:bg-cyan-600"
                   >
-                    Teklif Al
+                    Fiyat Al
                   </a>
                 </div>
               </div>
@@ -106,13 +117,13 @@ export default function KumesHayvanlariPage() {
                 <Image src="/images/kumes.png" alt="Kümes Kurulumu" width={56} height={56} className="h-14 w-14 object-contain" />
               </div>
               <div className="space-y-1">
-                <h2 className="text-xl font-bold text-amber-800">🪄 KÜMES KURULUMU</h2>
-                <p className="opacity-80">Kümes Kurulumu yapmak için <a href="/kumes-kurulumu" className="text-amber-800 font-semibold underline">tıklayınız</a>.</p>
+                <h2 className="text-xl font-bold text-cyan-700">🪄 KÜMES KURULUMU</h2>
+                <p className="opacity-80">Kümes Kurulumu yapmak için <a href="/kumes-kurulumu" className="text-cyan-700 font-semibold underline">tıklayınız</a>.</p>
               </div>
             </div>
             <a
               href="tel:+905543125164"
-              className="inline-flex items-center justify-center rounded-md bg-amber-800 text-white px-4 py-2 text-sm hover:bg-amber-900"
+              className="inline-flex items-center justify-center rounded-md bg-cyan-700 text-white px-4 py-2 text-sm hover:bg-cyan-800"
             >
               İletişime Geç
             </a>

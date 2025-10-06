@@ -46,7 +46,9 @@ export default async function VarietyDetailPage({ params }: Props) {
                     .replace("Suseks tavuk", "<strong>Suseks tavuk</strong>")
                     .replace("Blue Australorp", "<strong>Blue Australorp</strong>")
                     .replace("Lohman Sandy tavuk", "<strong>Lohman Sandy tavuk</strong>")
-                    .replace("Amerikan Bronz hindi", "<strong>Amerikan Bronz hindi</strong>"),
+                    .replace("Amerikan Bronz hindi", "<strong>Amerikan Bronz hindi</strong>")
+                    .replace("Black Nick tavuğu", "<strong>Black Nick tavuğu</strong>")
+                    .replace("Sasso tavuğu", "<strong>Sasso tavuğu</strong>"),
                 }}
               />
             ))}

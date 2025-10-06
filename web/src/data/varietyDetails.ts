@@ -68,6 +68,22 @@ export const varietyDetails: Record<string, VarietyDetail> = {
       "Karakter bakımından Amerikan Bronz hindiler dayanıklı, çevreye uyum sağlayabilen ve serbest dolaşımda aktif bir şekilde otlanabilen kuşlardır. Doğal yaşam alanlarında rahatça besin bulabilmeleri onların bakımını kolaylaştırır. Hem estetik görünümleri hem de yüksek et verimleri sayesinde günümüzde hâlâ birçok küçük çiftlikte ve hobi amaçlı yetiştiricilikte tercih edilen hindi ırkları arasında yer alır.",
     ],
   },
+  "black-nick-yarka": {
+    imageSrc: "/images/Black-nick.jpeg",
+    paragraphs: [
+      "Black Nick tavuğu, yüksek yumurta verimi ve dayanıklılığı ile öne çıkan bir hibrit yumurtacı tavuk ırkıdır. Genellikle ticari yumurta üretiminde ve küçük ölçekli çiftliklerde tercih edilir. Siyah tüyleriyle tanınan bu ırk, zarif bir görünüme sahip olup, aynı zamanda çevre koşullarına kolayca uyum sağlar. Black Nick tavukları hem kapalı kümeslerde hem de açık gezinti alanlarında rahatça yaşayabilir, bu da onları çok yönlü bir yetiştirme seçeneği haline getirir.",
+      "Bu tavukların en dikkat çekici özelliği, yılda 300 adede kadar kaliteli yumurta verebilmeleridir. Yumurtaları genellikle orta boy ve açık kahverengi kabukludur. Verim sürekliliği açısından oldukça istikrarlıdırlar; yıl boyunca düzenli yumurta üretimi yapabilirler. Ayrıca yemden yararlanma oranları yüksektir, bu da üreticiler için ekonomik bir avantaj sağlar.",
+      "Black Nick ırkı aynı zamanda sakin mizaçlı ve uysal bir karaktere sahiptir. Bu özellikleri sayesinde hobi amaçlı yetiştiricilikte de sıkça tercih edilir. Hem verimliliği hem de kolay bakımıyla öne çıkan Black Nick tavukları, sağlam yapıları sayesinde uzun ömürlüdür. Bu nedenle, hem profesyonel üreticiler hem de ev tipi küçük çiftlik sahipleri için ideal bir yumurtacı tavuk seçeneği olarak görülür.",
+    ],
+  },
+  "sasso-yarka": {
+    imageSrc: "/images/Sasso.jpeg",
+    paragraphs: [
+      "Sasso tavuğu, et verimi yüksek ve dayanıklı bir etlik tavuk ırkı olarak bilinir. Fransa kökenli olan bu tür, özellikle serbest dolaşım (free range) veya köy tipi yetiştiricilikte oldukça popülerdir. Sasso tavukları, hızlı gelişim gösterirken aynı zamanda sağlam kemik yapısı ve güçlü bacaklarıyla dikkat çeker. Bu özellikleri sayesinde hem açık alanda hem de kapalı kümes sistemlerinde rahatlıkla yetiştirilebilirler.",
+      "Sasso ırkı, lezzetli ve sıkı yapılı eti ile öne çıkar. Beyaz etli broyler ırklarına kıyasla daha doğal bir tada sahiptir, bu da onu özellikle yerel üreticiler ve organik tavuk eti arayan tüketiciler için cazip hale getirir. Ayrıca doğal beslenme ve bol hareket imkânı sağlandığında, etin rengi ve aroması daha da zenginleşir.",
+      "Bununla birlikte Sasso tavukları, yüksek adaptasyon yeteneği ve hastalıklara karşı direnci ile bilinir. Hem sıcak hem de soğuk iklimlerde yetiştirilebilirler. Renkleri genellikle kırmızımsı-kahverengidir ve tüy yapıları sık ve parlaktır. Etlik üretiminin yanı sıra bazı alt türleri yumurta da verebilir, ancak temel olarak et üretimi için tercih edilir. Bu özellikleriyle Sasso, doğal yetiştiricilik yapan çiftçilerin favori etlik tavuklarından biridir.",
+    ],
+  },
 };
 
 

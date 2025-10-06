@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const images: string[] = Array.from({ length: 29 }, (_, i) => `/images/galeri/${i + 1}.jpeg`);
+const images: string[] = Array.from({ length: 27 }, (_, i) => `/images/galeri/${i + 1}.jpeg`);
 
 export default function GalleryGrid() {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
@@ -53,7 +53,7 @@ export default function GalleryGrid() {
             onClick={() => setPage(p)}
             className={`px-3 py-1 rounded border text-sm ${
               p === page
-                ? "bg-amber-800 text-white border-amber-800"
+                ? "bg-cyan-800 text-white border-cyan-800"
                 : "border-black/10 dark:border-white/10"
             }`}
           >

@@ -76,6 +76,20 @@ export const varieties: Variety[] = [
     description:
       "Lohman ailesinin verimli üyelerinden, dengeli performans sunar.",
   },
+  {
+    slug: "black-nick-yarka",
+    name: "Black Nick Tavuk",
+    category: "Tavuk",
+    description:
+      "Black Nick Tavuk güçlü dayanıklılığı ve dengeli verimiyle öne çıkar.",
+  },
+  {
+    slug: "sasso-yarka",
+    name: "Sasso Tavuk",
+    category: "Tavuk",
+    description:
+      "Et ve yumurta veriminde dengeli, bakımı kolay bir hibrit ırk.",
+  },
 ];
 
 export function getVarietyBySlug(slug: string) {

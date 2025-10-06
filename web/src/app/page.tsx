@@ -107,7 +107,8 @@ export default function Home() {
             "sasso-yarka",
             "a-bronz-hindi",
           ].map((slug) => {
-            const v = varieties.find((i) => i.slug === slug)!;
+            const v = varieties.find((i) => i.slug === slug);
+            if (!v) return null;
             return (
               <div key={slug} className="rounded-lg border border-black/10 dark:border-white/10 p-5 flex flex-col gap-3">
                 <div className="text-sm uppercase opacity-60">{v.category}</div>
